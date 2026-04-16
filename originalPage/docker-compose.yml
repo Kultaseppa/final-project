@@ -1,0 +1,10 @@
+name: final-project-react
+services:
+  web:
+    build: .
+    container_name: react-web-container
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
